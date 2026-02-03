@@ -70,6 +70,7 @@ body {
     display: flex;
     gap: 2rem;
     align-items: flex-start;
+    justify-content: center;
     padding: 2rem;
     max-width: 1200px;
     width: 95%;
