@@ -46,7 +46,8 @@ class Game {
             finalScore: document.getElementById('final-score'),
             scoreComment: document.getElementById('score-comment'),
             historySidebar: document.getElementById('history-sidebar'),
-            historyList: document.getElementById('history-list')
+            historyList: document.getElementById('history-list'),
+            header: document.querySelector('header')
         };
 
         this.init();
@@ -80,6 +81,17 @@ class Game {
         Object.values(this.screens).forEach(s => s.classList.add('hidden'));
         this.screens[screenName].classList.remove('hidden');
         this.screens[screenName].classList.add('fade-in');
+
+        // Move main header to sidebar when in game or end screen
+        if (this.elements.header) {
+            if (screenName === 'game' || screenName === 'end') {
+                this.elements.header.classList.add('in-sidebar');
+                this.elements.historySidebar.prepend(this.elements.header);
+            } else {
+                this.elements.header.classList.remove('in-sidebar');
+                document.getElementById('game-container').prepend(this.elements.header);
+            }
+        }
 
         if (screenName !== 'game' && this.elements.youtubePlayer) {
             // Video cleanup removed

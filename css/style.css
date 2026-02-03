@@ -522,3 +522,17 @@ header p {
         padding: 1.5rem;
     }
 }
+header.in-sidebar {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+header.in-sidebar h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+header.in-sidebar p {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
