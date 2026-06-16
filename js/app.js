@@ -1,6 +1,6 @@
 // Game logic using global songData
 const INITIALS = [
-    '∅', 'b', 'p', 'm', 'f', 'd', 't', 'n', 'l',
+    'b', 'p', 'm', 'f', 'd', 't', 'n', 'l',
     'g', 'k', 'h', 'j', 'q', 'x', 'zh', 'ch',
     'sh', 'r', 'z', 'c', 's', 'y', 'w'
 ];

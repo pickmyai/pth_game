@@ -273,7 +273,6 @@ window.songData = [
         youtubeId: "Yf8pI9oRpjI",
         segments: [
             { text: "找", initial: "zh", final: "ao", pinyin: "zhǎo" },
-            { text: "愛", initial: "∅", final: "ai", pinyin: "ài" },
             { text: "深", initial: "sh", final: "en", pinyin: "shēn" },
             { text: "親", initial: "q", final: "in", pinyin: "qīn" },
             { text: "別", initial: "b", final: "ie", pinyin: "bié" }
