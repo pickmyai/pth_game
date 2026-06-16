@@ -46,41 +46,45 @@
                     <button id="next-btn" class="nav-btn" title="下一題">→</button>
                 </div>
 
-                <div class="song-info">
-                    <h3 id="song-title">歌曲標題</h3>
-                    <p id="song-artist">歌手</p>
-                </div>
-
-                <div class="lyrics-container">
-                    <p id="lyrics-display">歌詞加載中...</p>
-                </div>
-
-                <div class="input-display-container">
-                    <p>請填充 <span id="target-text" class="highlight">「...」</span> 的聲母與韻母：</p>
-                    <div class="input-slots">
-                        <div class="slot-box">
-                            <span class="slot-label">聲母</span>
-                            <div id="initial-slot" class="slot placeholder">?</div>
+                <div class="game-body">
+                    <div class="play-main">
+                        <div class="song-info">
+                            <h3 id="song-title">歌曲標題</h3>
+                            <p id="song-artist">歌手</p>
                         </div>
-                        <div class="slot-box">
-                            <span class="slot-label">韻母</span>
-                            <div id="final-slot" class="slot placeholder">?</div>
+
+                        <div class="lyrics-container">
+                            <p id="lyrics-display">歌詞加載中...</p>
                         </div>
+
+                        <div class="input-display-container">
+                            <p>請填充 <span id="target-text" class="highlight">「...」</span> 的聲母與韻母：</p>
+                            <div class="input-slots">
+                                <div class="slot-box">
+                                    <span class="slot-label">聲母</span>
+                                    <div id="initial-slot" class="slot placeholder">?</div>
+                                </div>
+                                <div class="slot-box">
+                                    <span class="slot-label">韻母</span>
+                                    <div id="final-slot" class="slot placeholder">?</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="feedback" class="feedback-msg hidden"></div>
+                    </div>
+
+                    <div class="keyboard-controls">
+                        <div class="tabs">
+                            <button id="tab-initial" class="tab-btn active">聲母表</button>
+                            <button id="tab-final" class="tab-btn">韻母表</button>
+                        </div>
+                        <div id="keyboard-grid" class="keyboard-grid">
+                            <!-- Keys will be injected here -->
+                        </div>
+                        <button id="submit-btn" class="primary-btn hidden">提交答案</button>
                     </div>
                 </div>
-
-                <div class="keyboard-controls">
-                    <div class="tabs">
-                        <button id="tab-initial" class="tab-btn active">聲母表</button>
-                        <button id="tab-final" class="tab-btn">韻母表</button>
-                    </div>
-                    <div id="keyboard-grid" class="keyboard-grid">
-                        <!-- Keys will be injected here -->
-                    </div>
-                    <button id="submit-btn" class="primary-btn hidden">提交答案</button>
-                </div>
-
-                <div id="feedback" class="feedback-msg hidden"></div>
             </div>
 
             <div id="end-screen" class="card hidden">

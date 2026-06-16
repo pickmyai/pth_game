@@ -82,6 +82,11 @@ body {
     max-width: 600px;
 }
 
+/* Game screen widens to fit the two-column (lyrics + keyboard) layout */
+.container:has(#game-screen:not(.hidden)) {
+    max-width: 920px;
+}
+
 header {
     text-align: center;
     margin-bottom: 2rem;
@@ -304,9 +309,24 @@ header p {
     background: rgba(255, 255, 255, 0.1);
 }
 
+/* Two-column game body: lyrics/input on the left, keyboard on the right */
+.game-body {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.play-main {
+    flex: 1 1 48%;
+    min-width: 0;
+}
+
 /* Keyboard */
 .keyboard-controls {
-    margin-top: 2rem;
+    flex: 1 1 52%;
+    min-width: 0;
+    margin-top: 0;
 }
 
 .tabs {
@@ -506,6 +526,21 @@ header p {
         width: 100%;
         max-width: 600px;
         order: 2;
+    }
+}
+
+/* Stack lyrics above keyboard on narrow screens (phones/small tablets) */
+@media (max-width: 768px) {
+    .container:has(#game-screen:not(.hidden)) {
+        max-width: 600px;
+    }
+
+    .game-body {
+        flex-direction: column;
+    }
+
+    .keyboard-controls {
+        margin-top: 2rem;
     }
 }
 
