@@ -1,11 +1,11 @@
 // Game logic using global songData
 const INITIALS = [
-    'b', 'p', 'm', 'f', 'd', 't', 'n', 'l',
+    '∅', 'b', 'p', 'm', 'f', 'd', 't', 'n', 'l',
     'g', 'k', 'h', 'j', 'q', 'x', 'zh', 'ch',
     'sh', 'r', 'z', 'c', 's', 'y', 'w'
 ];
 const FINALS = [
-    'a', 'o', 'e', 'i', 'u', 'ü', 'v', 'ai', 'ei', 'ui', 'ao', 'ou', 'iu', 'ie', 'üe', 'er',
+    'a', 'o', 'e', 'i', 'u', 'ü', 'ai', 'ei', 'ui', 'ao', 'ou', 'iu', 'ie', 'üe', 'er',
     'an', 'en', 'in', 'un', 'ün', 'ang', 'eng', 'ing', 'ong',
     'ia', 'iao', 'ian', 'iang', 'ua', 'uo', 'uai', 'uan', 'uang', 'iong', 'üan'
 ];
